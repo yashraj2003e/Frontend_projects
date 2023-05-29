@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;700&display=swap');
+
+
+
 * {
     padding: 0;
     margin: 0;
@@ -5,7 +9,8 @@
 }
 
 body {
-    font-family: sans-serif;
+    font-family: "Poppins",sans-serif;
+    /* font-weight: bold; */
 }
 
 i,svg {
@@ -33,12 +38,49 @@ i,svg {
 
 .hihat-track,.snare-track,.kick-track {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 70px; */
+    padding-top: 70px;
+    /* max-width: 700px; */
 }
 
 .snare,.hihat,.kick {
     display: flex;
+    margin-right: 100px;
+}
+
+.play {
+    margin-left:750px;
+    margin-top: 5%;
+    padding: 9px 25px;
+    background:rgb(71, 71, 71);
+    color: white;
+}
+
+button {
+    padding: 9px 25px;
+    cursor: pointer;
+}
+
+.snare-volume {
+    margin-right: 12px;
 }
 
 .controls {
     display: flex;
+    justify-content: space-between;
+    flex: 1;
+    font-size: 20px;
+    /* margin-left: 100px; */
+    margin: 0px 50px;
+}
+
+select,option {
+    cursor: pointer;
+}
+
+.controls button {
+    background:rgb(71, 71, 71);
+    color: white;
 }
