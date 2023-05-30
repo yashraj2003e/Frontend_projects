@@ -41,7 +41,7 @@ i,svg {
     justify-content: center;
     align-items: center;
     /* margin-top: 70px; */
-    padding-top: 70px;
+    padding-top: 30px;
     /* max-width: 700px; */
 }
 
@@ -51,11 +51,13 @@ i,svg {
 }
 
 .play {
-    margin-left:750px;
+    margin-left:47.5%;
     margin-top: 5%;
-    padding: 9px 25px;
+    padding: 1rem 2rem;
     background:rgb(71, 71, 71);
     color: white;
+    border-radius: 20px;
+    transition: all 0.3 ease-in-out;
 }
 
 button {
@@ -78,6 +80,10 @@ button {
 
 select,option {
     cursor: pointer;
+}
+
+button.kick-volume {
+    margin-left:10px;
 }
 
 .controls button {
@@ -104,4 +110,41 @@ select,option {
     to {
         transform: scale(1.2);
     }
+}
+
+.mute {
+    transition: all 0.3s ease;
+    border-radius: 30px;
+}
+
+.mute.active {
+    background-color: rgb(158, 158, 158);
+}
+
+.tempo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    margin-left: 35%;
+    margin-top: 3%;
+    /* padding-left: 50%; */
+}
+
+.tempo-slider {
+    padding: 0.2rem;
+    appearance: none;
+    -webkit-appearance: none;
+    margin: 1rem 0rem;
+    width: 100%;
+    position: relative;
+    background: rgb(88,88,88);
+    cursor: pointer;
+    border-radius: 1rem;
+}
+
+.tempo p {
+    font-size: 1.5rem;
+    font-weight: bolder;
 }
